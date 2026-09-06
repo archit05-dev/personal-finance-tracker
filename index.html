@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Finance Tracker</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+<header>
+    <h1>💰 Personal Finance Tracker</h1>
+    <p>Manage your income and expenses easily.</p>
+</header>
+
+<main class="container">
+
+    <!-- Summary Cards -->
+    <section class="summary">
+
+        <div class="card balance">
+            <h3>Total Balance</h3>
+            <h2>₹0</h2>
+        </div>
+
+        <div class="card income">
+            <h3>Total Income</h3>
+            <h2>₹0</h2>
+        </div>
+
+        <div class="card expense">
+            <h3>Total Expense</h3>
+            <h2>₹0</h2>
+        </div>
+
+    </section>
+
+    <!-- Filters -->
+    <section class="toolbar">
+
+        <input type="text" placeholder="Search transactions">
+
+        <select>
+            <option>All Types</option>
+            <option>Income</option>
+            <option>Expense</option>
+        </select>
+
+        <select>
+            <option>All Categories</option>
+            <option>Food</option>
+            <option>Travel</option>
+            <option>Shopping</option>
+            <option>Salary</option>
+        </select>
+
+        <select>
+            <option>Newest First</option>
+            <option>Oldest First</option>
+        </select>
+
+    </section>
+
+    <section class="content">
+
+        <!-- Form -->
+        <div class="form-container">
+
+            <h2>Add Transaction</h2>
+
+            <form>
+
+                <input
+                    type="text"
+                    placeholder="Title"
+                >
+
+                <input
+                    type="number"
+                    placeholder="Amount"
+                >
+
+                <select>
+                    <option>Select Type</option>
+                    <option>Income</option>
+                    <option>Expense</option>
+                </select>
+
+                <select>
+                    <option>Select Category</option>
+                    <option>Food</option>
+                    <option>Travel</option>
+                    <option>Shopping</option>
+                    <option>Bills</option>
+                    <option>Salary</option>
+                </select>
+
+                <input
+                    type="date"
+                >
+
+                <button type="submit">
+                    Add Transaction
+                </button>
+
+            </form>
+
+        </div>
+
+        <!-- Transaction History -->
+        <div class="history">
+
+            <h2>Transaction History</h2>
+
+            <div class="empty-state">
+                No transactions yet.
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
