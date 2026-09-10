@@ -64,11 +64,11 @@ function renderTransactions(transactionArray = transactions) {
 
                 <div class="actions">
 
-                    <button onclick="editTransaction(${transaction.id})">
+                    <button class="edit-btn" onclick="editTransaction(${transaction.id})">
                         Edit
                     </button>
 
-                    <button onclick="deleteTransaction(${transaction.id})">
+                    <button class="delete-btn" onclick="deleteTransaction(${transaction.id})">
                     Delete
                     </button>
 

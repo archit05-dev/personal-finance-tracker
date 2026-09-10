@@ -399,21 +399,7 @@ header p{
 
 }
 
-.actions button:first-child{
 
-    background:#4A90E2;
-
-    color:white;
-
-}
-
-.actions button:last-child{
-
-    background:#C62828;
-
-    color:white;
-
-}
 
 .transaction-meta span:last-child{
 
@@ -421,4 +407,24 @@ header p{
 
     font-size:.9rem;
 
+}
+
+.edit-btn{
+    background:#4A90E2;
+    color:white;
+    transition:.2s;
+}
+
+.edit-btn:hover{
+    background:#5C9EF0;
+}
+
+.delete-btn{
+    background:#C62828;
+    color:white;
+    transition:.2s;
+}
+
+.delete-btn:hover{
+    background:#D63B3B;
 }
