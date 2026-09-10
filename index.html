@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Finance Tracker</title>
 
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
 </head>
@@ -22,17 +28,17 @@
 
         <div class="card balance">
             <h3>Total Balance</h3>
-            <h2>₹0</h2>
+            <h2 id="balance">₹0</h2>
         </div>
 
         <div class="card income">
             <h3>Total Income</h3>
-            <h2>₹0</h2>
+            <h2 id="income">₹0</h2>
         </div>
 
         <div class="card expense">
             <h3>Total Expense</h3>
-            <h2>₹0</h2>
+            <h2 id="expense">₹0</h2>
         </div>
 
     </section>
@@ -40,23 +46,24 @@
     <!-- Filters -->
     <section class="toolbar">
 
-        <input type="text" placeholder="Search transactions">
+        <input id="search" type="text" placeholder="Search transactions">
 
-        <select>
+        <select id="filterType">
             <option>All Types</option>
             <option>Income</option>
             <option>Expense</option>
         </select>
 
-        <select>
+        <select id="filterCategory">
             <option>All Categories</option>
             <option>Food</option>
             <option>Travel</option>
             <option>Shopping</option>
+            <option>Bills</option>
             <option>Salary</option>
         </select>
 
-        <select>
+        <select id="sort">
             <option>Newest First</option>
             <option>Oldest First</option>
         </select>
@@ -70,25 +77,27 @@
 
             <h2>Add Transaction</h2>
 
-            <form>
+            <form id="transactionForm">
 
                 <input
+                    id="title"
                     type="text"
                     placeholder="Title"
                 >
 
                 <input
+                    id="amount"
                     type="number"
                     placeholder="Amount"
                 >
 
-                <select>
+                <select id="type">
                     <option>Select Type</option>
                     <option>Income</option>
                     <option>Expense</option>
                 </select>
 
-                <select>
+                <select id="category">
                     <option>Select Category</option>
                     <option>Food</option>
                     <option>Travel</option>
@@ -98,10 +107,11 @@
                 </select>
 
                 <input
+                    id="date"
                     type="date"
                 >
 
-                <button type="submit">
+                <button id="submitBtn" type="submit">
                     Add Transaction
                 </button>
 
@@ -114,9 +124,7 @@
 
             <h2>Transaction History</h2>
 
-            <div class="empty-state">
-                No transactions yet.
-            </div>
+            <div id="transactionList"></div>
 
         </div>
 
