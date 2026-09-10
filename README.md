@@ -57,7 +57,6 @@ Personal-Finance-Tracker/
 
 ## 📸 Screenshots
 
-_Add screenshots of the application here._
 
 ### Dashboard
 
@@ -71,7 +70,7 @@ _Add screenshots of the application here._
 1. Clone the repository
 
 ```bash
-git clone <repository-url>
+git clone <https://github.com/archit05-dev/personal-finance-tracker>
 ```
 
 2. Open the project folder.
